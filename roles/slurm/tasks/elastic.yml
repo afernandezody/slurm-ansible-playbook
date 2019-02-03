@@ -1,4 +1,7 @@
 ---
+- name: install centos-release-scl
+  yum: name=centos-release-scl state=installed
+
 - name: install Python 3.6
   yum: name=rh-python36 state=installed
 
