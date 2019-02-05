@@ -3,7 +3,7 @@
   yum: name=centos-release-scl state=installed
   
 - name: install_repository centos-sclo-rh-testing
-  yum_repository: name=centos-sclo-rh-testing baseurl=https://centos.pkgs.org/7/centos-sclo-rh-testing/
+  yum_repository: name=centos-sclo-rh-testing description=Some_YUM_repository baseurl=https://centos.pkgs.org/7/centos-sclo-rh-testing/
 
 - name: install Python 3.6
   yum: name=rh-python36 state=installed
