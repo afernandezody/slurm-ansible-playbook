@@ -3,7 +3,7 @@
   yum: name=centos-release-scl state=installed
   
 - name: install centos-sclo-rh-testing
-  yum-config-manager: name=centos-sclo-rh-testing enabled=yes state=installed
+  yum: name=centos-sclo-rh-testing enabled=yes state=installed
 
 - name: install rhel-server-rhscl-7-rpms
   yum-config-manager: name=rhel-server-rhscl-7-rpms enabled=yes state=installed
