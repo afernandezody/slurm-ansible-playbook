@@ -6,10 +6,10 @@
   yum: name=centos-sclo-rh-testing enabled=yes state=installed
 
 - name: install rhel-server-rhscl-7-rpms
-  yum-config-manager: name=rhel-server-rhscl-7-rpms enabled=yes state=installed
+  yum: name=rhel-server-rhscl-7-rpms enabled=yes state=installed
 
 - name: install rhel-server-rhscl-beta-7-rpms
-  yum-config-manager: name=rhel-server-rhscl-beta-7-rpms enabled=yes state=installed
+  yum: name=rhel-server-rhscl-beta-7-rpms enabled=yes state=installed
 
 - name: install Python 3.6
   yum: name=rh-python36 state=installed
