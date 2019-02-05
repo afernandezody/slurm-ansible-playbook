@@ -2,14 +2,14 @@
 - name: install centos-release-scl
   yum: name=centos-release-scl state=installed
   
-- name: install centos-sclo-rh-testing
-  yum: name=centos-sclo-rh-testing enabled=yes state=installed
+- name: install_repository centos-sclo-rh-testing
+  yum_repository: name=centos-sclo-rh-testing
 
-- name: install rhel-server-rhscl-7-rpms
-  yum: name=rhel-server-rhscl-7-rpms enabled=yes state=installed
+- name: install_repository rhel-server-rhscl-7-rpms
+  yum_repository: name=rhel-server-rhscl-7-rpms 
 
-- name: install rhel-server-rhscl-beta-7-rpms
-  yum: name=rhel-server-rhscl-beta-7-rpms enabled=yes state=installed
+- name: install_repository rhel-server-rhscl-beta-7-rpms
+  yum_repository: name=rhel-server-rhscl-beta-7-rpms 
 
 - name: install Python 3.6
   yum: name=rh-python36 state=installed
